@@ -1,25 +1,21 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Edlevo Calendar Exporter",
   "version": "1.0",
   "description": "Extracts time data from an edlevo schema page",
   "permissions": ["activeTab", "downloads"],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
-  "browser_action": {
+  "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "images/icon16.png",
-      "48": "images/icon48.png",
-      "128": "images/icon128.png"
+      "16": "images/edlexport_16.png",
+      "48": "images/edlexport_48.png",
+      "128": "images/edlexport_128.png"
     }
   },
   "icons": {
-    "16": "images/icon16.png",
-    "48": "images/icon48.png",
-    "128": "images/icon128.png"
+    "16": "images/edlexport_16.png",
+    "48": "images/edlexport_48.png",
+    "128": "images/edlexport_128.png"
   },
   "content_scripts": [
     {
